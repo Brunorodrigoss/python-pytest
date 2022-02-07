@@ -2,5 +2,8 @@ import pytest
 
 @pytest.mark.smoke
 @pytest.mark.engine
-def test_engine_function_as_expected():
+@pytest.mark.ui
+def test_can_navigate_to_engine_page(chrome_browser):
+    chrome_browser.get('https://www.artofmanliness.com/articles/how-a-cars-engine-works/')
+    chrome_browser.quit()
     assert True

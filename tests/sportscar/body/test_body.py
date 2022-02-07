@@ -1,10 +1,13 @@
 import pytest
 
+@pytest.mark.smoke
 @pytest.mark.body
 class BodyTests:
 
-    @pytest.mark.door
-    def test_body_function_as_expected(self):
+    @pytest.mark.ui
+    def test_can_navigate_to_body_page(self, chrome_browser):
+        chrome_browser.get('http://www.motortrend.com/')
+        chrome_browser.quit()
         assert True
 
     def test_bumper(self):
