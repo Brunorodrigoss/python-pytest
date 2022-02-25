@@ -12,3 +12,4 @@
 | pytest -m "entertainment or engine" | Run all tests marked by entertainment or engine |
 | pytest -m "entertainment and engine" | Run all tests marked by entertainment and engine on the same test |
 | pytest -m "not engine" | Run all tests except maked by engine |
+| pytest -rs -v | Show extra test summary info as specified by chars: (f)ailed, (E)rror, (s)kipped, (x)failed, (X)passed, (p)assed, (P)assed with output, (a)ll except passed |
